@@ -1,0 +1,205 @@
+﻿/*
+version:1.0.0
+*/
+.main-button{
+    border: none;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    background-color: #aaaaaa;
+}
+.main-button:hover{
+    color: #fff;
+}
+.custom-button{
+    text-align: center;
+    cursor: pointer;
+    -moz-transition:all 300ms ease-out;
+    -o-transition:all 300ms ease-out;
+    -webkit-transition:all 300ms ease-out;
+    transition:all 300ms ease-out;
+}
+.custom-button.style01{
+    color: #fff;
+    background-color: #e5534c;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    text-transform: uppercase;
+}
+.custom-button.style01:hover{
+    background-color: #000;
+}
+.custom-button.style02{
+    color: #fff;
+    background-color: #f29f29;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    text-transform: uppercase;
+}
+.custom-button.style02:hover{
+    background-color: #000;
+}
+
+/* [yt-button] */
+.yt-button{
+    padding: 9px 30px;
+    text-align: center;
+    -moz-transition:all 300ms ease-out;
+    -o-transition:all 300ms ease-out;
+    -webkit-transition:all 300ms ease-out;
+    transition:all 300ms ease-out;
+    display: inline-block;
+}
+.yt-button01,
+.yt-main-button01,
+.yt-second-button01{
+    color: #fff;
+}
+.yt-button01:hover,
+.yt-main-button01:hover,
+.yt-second-button01:hover{
+    background-color: #fff !important;
+}
+.yt-button-radius{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.yt-button01{
+    border: 2px solid #999;
+    background-color: #999;
+}
+.yt-button01:hover{
+    color: #999;
+}
+.yt-main-button01{
+    border: 2px solid #2fb5d2;
+    background-color: #2fb5d2;
+}
+.yt-main-button01:hover{
+    color: #2fb5d2;
+}
+.yt-second-button01{
+    border: 2px solid #ff9a52;
+    background-color: #ff9a52;
+}
+.yt-second-button01:hover{
+    color: #ff9a52;
+}
+.yt-button03,
+.yt-main-button03,
+.yt-second-button03,
+.yt-button04,
+.yt-main-button04,
+.yt-second-button04,
+.yt-main-second,
+.yt-second-main{
+    color: #fff;
+}
+.yt-button03{
+    background-color: #333333;
+}
+.yt-button03:hover{
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+}
+.yt-main-button03{
+    background-color: #2fb5d2;
+}
+.yt-main-button03:hover{
+    background-color: rgba(47, 181, 210, 0.8);
+    color: #fff;
+}
+.yt-second-button03{
+    background-color: #ff9a52;
+}
+.yt-second-button03:hover{
+    background-color: rgba(255, 154, 82, 0.8);
+    color: #fff;
+}
+.yt-button04{
+    background-color: rgba(51, 51, 51, 0.8);
+}
+.yt-button04:hover{
+    background-color: #333333;
+    color: #fff;
+}
+.yt-main-button04{
+    background-color: rgba(47, 181, 210, 0.8);
+}
+.yt-main-button04:hover{
+    background-color: #2fb5d2;
+    color: #fff;
+}
+.yt-second-button04{
+    background-color: rgba(255, 154, 82, 0.8);
+}
+.yt-second-button04:hover{
+    background-color: #ff9a52;
+    color: #fff;
+}
+.yt-main-second{
+    background-color: #2fb5d2;
+}
+.yt-main-second:hover{
+    background-color: #ff9a52;
+    color: #fff;
+}
+.yt-second-main{
+    background-color: #ff9a52;
+}
+.yt-second-main:hover{
+    background-color: #2fb5d2;
+    color: #fff;
+}
+.wbanner-normal-text-01{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #4e688d;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    -webkit-box-shadow: 6px 4px 0 0 rgba(78, 104, 141, .1);
+    -moz-box-shadow: 6px 4px 0 0 rgba(78, 104, 141, .1);
+    box-shadow: 6px 4px 0 0 rgba(78, 104, 141, .1);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.yt-main-button05,
+.yt-second-button05,
+.yt-main-button06,
+.yt-second-button06{
+    border: 1px solid #333;
+    color: #333;
+}
+.yt-main-button05.white,
+.yt-second-button05.white,
+.yt-main-button06.white,
+.yt-second-button06.white{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.yt-main-button05:hover{
+    border-color: #2fb5d2;
+    color: #2fb5d2;
+}
+.yt-second-button05{
+    border-color: #ff9a52;
+    color: #ff9a52;
+}
+.yt-main-button06:hover{
+    border-color: #2fb5d2;
+    background-color: #2fb5d2;
+    color: #fff;
+}
+.yt-second-button06{
+    border-color: #ff9a52;
+    background-color: #ff9a52;
+    color: #fff;
+}

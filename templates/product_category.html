@@ -1,0 +1,124 @@
+{% extends 'basic.html' %} {% load staticfiles %}
+{% block links %}
+<!-- datatable css -->
+<link rel="stylesheet" href="{% static '/ui/jquery.dataTables.min.css' %}" type="text/css" media="all"/>
+<link rel="stylesheet" href="{% static '/ui/buttons.dataTables.min.css' %}" type="text/css" media="all"/>
+<link rel="stylesheet" href="{% static '/ui/font-awesome.min.css' %}" type="text/css" media="all"/>
+<link rel="stylesheet" href="{% static '/ui/jquery-notification/css/lobibox.css' %}" type="text/css" media="all"/>
+{% endblock %}
+{% block content %} 
+<div id="wrapper">
+    <div class="box-breadcrumb">
+        <div class="container">
+            <ul class="list-inline">
+                                
+                    <li>
+                        <a href=" " class="main_color-hover-color transition-300">Home
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li>
+                        <a href=" " class="main_color-hover-color transition-300 active">Poduct Category                         </a>
+                        <meta itemprop="position" content="2">
+                    </li>
+              </ul>
+        </div>
+    </div>
+    <div class="container">
+       <aside id="notifications">
+          <div class="">
+          </div>
+       </aside>
+       <div class="row">
+          <div id="content-wrapper" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <div id="main">
+                    </section>
+                   <div class="row eqheight"> 
+                        <div class="col-md-4 "> 
+                                <section id="content" class="page-content">
+                            <div class="portlet light bordered">
+                                <div class="portlet-body form">
+                                          <div class="form-title">
+                                                   <h3 class="left-icon"><i class="fa"></i><span>Add Product Category</span></h3>
+                                                </div>
+                                                <form  id="product_category" class="js-customer-form" method="post">
+                                                      {% csrf_token %}
+                                                   <section> 
+                                                      <input type="hidden" name="id_customer" value="">
+                                                      
+                                                      <div class="form-group">
+                                                         <div class="">
+                                                            <input class="form-control" name="product_cat_name" id="product_cat_name" type="text" value=""  placeholder="Product Category name"  required  data-error=".errorTxt0">
+                                                            <span class="errorTxt0 errormessage"></span>
+                                                         </div>
+                                                      </div>
+                                                      <div class="form-group ">
+                                                         <div class="">
+                                                            <input class="form-control" name="product_cat_description" id="product_cat_description" type="text" value=""  placeholder="Product Category Description"  required  data-error=".errorTxt1" />
+                                                            <span class="errorTxt1 errormessage"></span>
+                                                         </div>
+                                                      </div>
+                                                  </section>
+                                                  <div class="clearfix"> </div>
+                                                  <div class="clearfix"> </div>
+                                                   <footer class="form-footer clearfix"> 
+                                                       
+                                                            <div class="form-group" align="right" id="button_div">
+                                                            </div> 
+                                                   </footer>
+                                                </form>
+                                </div>
+                            </div>
+                                </section>
+                        </div>
+                    <!-- form dev end -->
+                    <!-- table dev start -->
+                        <div class="col-md-8">
+                                <section id="content" class="page-content">
+                                                        <div class="form-title">
+                                                            <h3 class="left-icon"><i class="fa"></i><span>Product Categories</span></h3>
+                                                        </div>
+                                                        <table id="category" class="display" style="cursor:pointer">
+                                                        </table>
+                            </section>
+                        </div>
+                    </div>
+<!-- test -->
+
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ {% endblock%}
+
+ {% block scripts %}
+ <!-- datatable js -->
+ <script src="{% static '/ui/jquery-notification/js/lobibox.js' %}" type="text/javascript"></script>
+<script src="{% static  '/dev/datatables/js/datatables.min.js' %}" type="text/javascript"></script>
+<script src="{% static '/product_details/product_category.js' %}" type="text/javascript"></script>
+<script src="{% static '/dev/lib.js' %}" type="text/javascript"></script>
+
+ {% endblock %}
+ <div id="wrapper"> 
+    <div class="box-breadcrumb">
+       <div class="container">
+          <ul class="list-inline"> 
+             <li>
+                <a href="index.html" class="main_color-hover-color transition-300">Home
+                </a>
+                <meta itemprop="position" content="1">
+             </li> 
+          </ul>
+       </div>
+    </div>
+    <div class="container">
+       <aside id="notifications">
+          <div class="">
+          </div>
+       </aside>
+      
+    </div>
+ </div>
+ 

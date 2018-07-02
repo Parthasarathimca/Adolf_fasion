@@ -1,0 +1,639 @@
+have  to do .....
+1. fonts is in CDN have to change as local
+2. img_path has been set at basic.html localy have to change while hosting
+3. index page background image also seted as local at .ps_theme.css ==>line===>10971
+4. data table colums not showing 
+
+changes 
+18/06/2018 = global.css file and ps_theme.css
+
+
+<form action="http://prestashop.7uptheme.com/smartbuy/en/login?create_account=1" id="customer-form" class="js-customer-form" method="post">
+                         <section>
+                            <input type="hidden" name="id_customer" value="">
+                            <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Product Category</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                            <div class="form-group ">
+                               <div class="">
+                                  <input class="form-control" name="product_name" type="text" value=""  placeholder="Product name"  required />
+                               </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="">
+                                   <input class="form-control" name="product_price" type="number" value=""  placeholder="Product Price"  required />
+                                </div>
+                             </div>
+                            <div class="form-group ">
+                               <div class="">
+                                  <input class="form-control" name="product_description" type="text" value=""  placeholder="Product Description"  required />
+                               </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Upload Image</label>
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <span class="btn btn-default btn-file">
+                                            Browse… <input type="file" id="imgInp">
+                                        </span>
+                                    </span>
+                                    <input type="text" class="form-control" readonly>
+                                </div>
+                                <img id='img-upload'/>
+                            </div>
+                            <!-- bootstrap form https://getbootstrap.com/docs/4.0/components/forms/-->
+
+                            <!--<div class="form-group ">
+                                 
+                               <div class="">
+                                  <input class="form-control" name="email" type="email" value=""  placeholder="Email"  required />
+                               </div>
+                            </div>-->
+                           <!-- <div class="form-group ">
+                               <div class="">
+                                  <div class="js-parent-focus">
+                                     <a href="javascript:void(0)" class="main_color-hover-background psfshow-password password-hide">
+                                     <i class="fa fa-eye is-hide" aria-hidden="true"></i>
+                                     <i class="fa fa-eye-slash is-show" aria-hidden="true"></i>
+                                     </a>
+                                     <div class="psfpassword-input">
+                                        <input class="form-control js-child-focus js-visible-password" name="password" type="password" value="" pattern=".{5,}" required placeholder="Password" />
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="form-group ">
+                               <div class="">
+                                  <input class="form-control" name="birthday" type="text" value=""  placeholder="MM/DD/YYYY"   />
+                                  <span class="form-control-comment">(E.g.: 05/31/1970)</span>
+                               </div>
+                            </div>
+                            <div class="form-group ">
+                               <div class="">
+                                  <span class="custom-checkbox">
+                                  <input name="optin" type="checkbox" value="1"   />
+                                  <span><i class="ion-ios-checkmark-empty checkbox-checked" aria-hidden="true"></i></span>
+                                  <label>Receive offers from our partners</label>
+                                  </span>
+                               </div>
+                            </div>
+                            <div class="form-group ">
+                               <div class="">
+                                  <span class="custom-checkbox">
+                                  <input name="newsletter" type="checkbox" value="1"   />
+                                  <span><i class="ion-ios-checkmark-empty checkbox-checked" aria-hidden="true"></i></span>
+                                  <label>Sign up for our newsletter<br><em>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</em></label>
+                                  </span>  
+                               </div>
+                            </div>-->
+                         </section>
+                         <footer class="form-footer clearfix">
+                             <div class="button-area">
+                            <input type="hidden" name="submitCreate" value="1">
+                            <button id="product_reset_button" class="form-control-submit pull-xs-right main-link main_color-background main_color-border main_color-hover-color white_color-hover-background transition-300" data-link-action="save-customer" type="submit">
+                                <span>Reset</span>
+                                </button>
+                            <button id="product_save_button" class="form-control-submit pull-xs-right main-link main_color-background main_color-border main_color-hover-color white_color-hover-background transition-300" data-link-action="save-customer" type="submit">
+                            <span>Save</span>
+                            </button>
+                             </div>
+                         </footer>
+                      </form>
+
+                      -----------------------20/06/2018---------------------------
+                      div class="psf-header-35c7fd18 top-header top-header-5 psf-row clearfix row-custom-container" >
+                  <div class="container">
+                     <div class="row ">
+                        <div class="psf-header-5bfc7f11  col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 col-md-2 offset-md-0 col-sm-12 offset-sm-0 col-xs-12 offset-xs-0" >
+                           <div class="psf-header-8d44cebc  xl-position-hiden lg-position-hiden md-position-left sm-position-left xs-position-left" ><a class="mainmenubutton default menu-button main_color-background" href="javascript:void(0)">
+                              <i class="fa fa-bars" aria-hidden="true"></i>
+                              </a>
+                           </div>
+                           <div class="psf-header-8df3d37d " >
+                              <div class="header_logo logo default" >
+                                 <a href="http://prestashop.7uptheme.com/smartbuy/" title="Smart Buy" id="header_logo-clone">
+                                 <img class="only_index" src="http://prestashop.7uptheme.com/smartbuy/modules/psframework/img/home01/logo-1.png" alt="Smart Buy" />
+                                 <img class="only_other" src="http://prestashop.7uptheme.com/smartbuy/img/logo-2.png" alt="Smart Buy" />
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="psf-header-e6413029  col-xl-8 offset-xl-0 col-lg-8 offset-lg-0 col-md-8 offset-md-0 col-sm-9 offset-sm-0 col-xs-9 offset-xs-0" >
+                           <div class="psf-header-54d59070 " >
+                              <div id="main-megamenu-default" class="main-nav megamenu default megamenu01  clone-to-sticky">
+                                 <a href="#" class="toggle-mobile-menu"><span></span></a>
+                                 <ul data-menuname="Main menus" class="list-inline horizontal-list-menus responsive-menu main-megamenu-clone " id="megamenu-default">
+                                    <li class="menu-item-preview parent simple  white_color-after-color">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="http://localhost/prestashop/smartbuy/en/" >
+                                       <span class="menu-txt none" data-label="">Home</span>
+                                       <i class="responsive-dropdown-toggle fa"></i>
+                                       </a>
+                                       <ul class="sub-menu list-inline submenus responsive-dropdown">
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="index98f1.html?theme_option_directory=home01" >
+                                             <span class="menu-txt none" data-label="">Home 01</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="index7b34.html?theme_option_directory=home02" >
+                                             <span class="menu-txt none" data-label="">Home 02</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="index017b.html?theme_option_directory=home03" >
+                                             <span class="menu-txt none" data-label="">Home 03</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="index0839.html?theme_option_directory=home04" >
+                                             <span class="menu-txt none" data-label="">Home 04</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="indexaa10.html?theme_option_directory=home05" >
+                                             <span class="menu-txt none" data-label="">Home 05</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="#" >
+                                             <span class="menu-txt none" data-label="">Home 06</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="#" >
+                                             <span class="menu-txt none" data-label="">Home 07</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="#" >
+                                             <span class="menu-txt none" data-label="">Home 08</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="#" >
+                                             <span class="menu-txt none" data-label="">Home 09</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview  last">
+                                             <a class="main_color-hover-background menu-title" href="#" >
+                                             <span class="menu-txt none" data-label="">Home 10</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="menu-item-preview parent mega  white_color-after-color">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="#" >
+                                       <span class="menu-txt none" data-label="">Featured</span>
+                                       <i class="responsive-dropdown-toggle fa"></i>
+                                       </a>
+                                       <div class="megacontent fullwidth  megacontent-47387aa4  responsive-dropdown">
+                                          <div  class="psf-megacontent-5c58e037  psf-row clearfix row " >
+                                             <div class="psf-megacontent-e1e5af0f  col-xl-0 offset-xl-0 col-lg-0 offset-lg-0 col-md-0 offset-md-0 col-sm-0 offset-sm-0 col-xs-0 offset-xs-0" >
+                                                <div class="psf-megacontent-38add780 " >
+                                                   <div class="megacategory megacategory01 megacategory_6500a1c9 tabs-container ">
+                                                      <div class="mega-menu mega-menu-v1">
+                                                         <div class="sidebar-mega-menu">
+                                                            <ul class="nav nav-tabs list-inline" role="tablist">
+                                                               <li role="presentation" data-swiperclass="megacategory-item-a83e01b3" class="text-uppercase font-weight-bold swiper-tabs-list-item tab-switcher active transition-300">
+                                                                  <h3><a href="javascript:void(0)" class="main_color-active-color main_color-hover-color active">Garden</a></h3>
+                                                               </li>
+                                                               <li role="presentation" data-swiperclass="megacategory-item-1f23c0b7" class="text-uppercase font-weight-bold swiper-tabs-list-item tab-switcher transition-300">
+                                                                  <h3><a href="javascript:void(0)" class="main_color-active-color main_color-hover-color">Home</a></h3>
+                                                               </li>
+                                                               <li role="presentation" data-swiperclass="megacategory-item-c60583ba" class="text-uppercase font-weight-bold swiper-tabs-list-item tab-switcher transition-300">
+                                                                  <h3><a href="javascript:void(0)" class="main_color-active-color main_color-hover-color">Tech</a></h3>
+                                                               </li>
+                                                            </ul>
+                                                         </div>
+                                                         <div class="content-mega-menu">
+                                                            <div class="tab-contents">
+                                                               <div id="megacategory-tab-a83e01b3" data-id="320" data-widget_id="46" class="tab-content-item megacategory-tab-ajax-loader-0" style="display: block">
+                                                                  <div class="megacategory-item megacategory-item01">
+                                                                     <div class="row">
+                                                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                                           <div class="item product is-product-container product-style01 product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1"  itemscope itemtype="https://schema.org/Product">
+                                                                              <div class="actions product-extra-link">
+                                                                                 <a rel="nofollow" href="#" class="quick-view main_color-hover-color transition-300 relative show-type-tooltip" data-link-action="quickview"><i class="fa fa-eye" aria-hidden="true"></i><span>Quick View</span></a>
+                                                                                 <a href="javascript:void(0)" class="add-to-favorite box-hidden wishlist favorite-pid-1" data-id_product="1" data-id_product_attribute="0">
+                                                                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                                                                                 <span>Add to favorite</span>
+                                                                                 </a>
+                                                                              </div>
+                                                                              <div class="thumb-product">
+                                                                                 <a href="garden/1-1-becca-cosmetics.html#/1-size-s/13-color-orange">
+                                                                                 <img class="primary-image first img-responsive transition-500" src="http://prestashop.7uptheme.com/smartbuy/32-custom_250_250/becca-cosmetics.jpg" alt="Becca Cosmetics" itemprop="image" />
+                                                                                 </a>
+                                                                              </div>
+                                                                              <div class="name-product text-truncate">
+                                                                                 <h3><a href="garden/1-1-becca-cosmetics.html#/1-size-s/13-color-orange" class="main_color-hover-color">Becca Cosmetics</a></h3>
+                                                                              </div>
+                                                                              <div class="box-cart">
+                                                                                 <a class="ajax_add_to_cart_button cart main_color-hover-color transition-300" href="module/psframework/cart.html" rel="nofollow" data-id_product_attribute="1" data-id_product="1" data-id_customization="" data-id_address_delivery="" data-qty="1">
+                                                                                 <span>Add to cart</span><i class="fa fa-opencart" aria-hidden="true"></i>
+                                                                                 </a>
+                                                                                 <span class="price main_color-hover-background transition-300">
+                                                                                 <ins class="">$16.51</ins>
+                                                                                 </span>
+                                                                              </div>
+                                                                              <!--<a href="#" class="customize various" data-fancybox-type="iframe"><i class="fa fa-wrench" aria-hidden="true"></i> customize</a>-->
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                                           <div class="item product is-product-container product-style01 product-miniature js-product-miniature" data-id-product="2" data-id-product-attribute="7"  itemscope itemtype="https://schema.org/Product">
+                                                                              <div class="actions product-extra-link">
+                                                                                 <a rel="nofollow" href="#" class="quick-view main_color-hover-color transition-300 relative show-type-tooltip" data-link-action="quickview"><i class="fa fa-eye" aria-hidden="true"></i><span>Quick View</span></a>
+                                                                                 <a href="javascript:void(0)" class="add-to-favorite box-hidden wishlist favorite-pid-2" data-id_product="2" data-id_product_attribute="0">
+                                                                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                                                                                 <span>Add to favorite</span>
+                                                                                 </a>
+                                                                              </div>
+                                                                              <div class="thumb-product">
+                                                                                 <a href="garden/2-7-blouse.html#/1-size-s/11-color-black">
+                                                                                 <img class="primary-image first img-responsive transition-500" src="http://prestashop.7uptheme.com/smartbuy/33-custom_250_250/blouse.jpg" alt="Blouse" itemprop="image" />
+                                                                                 </a>
+                                                                              </div>
+                                                                              <div class="name-product text-truncate">
+                                                                                 <h3><a href="garden/2-7-blouse.html#/1-size-s/11-color-black" class="main_color-hover-color">Blouse</a></h3>
+                                                                              </div>
+                                                                              <div class="box-cart">
+                                                                                 <a class="ajax_add_to_cart_button cart main_color-hover-color transition-300" href="module/psframework/cart.html" rel="nofollow" data-id_product_attribute="7" data-id_product="2" data-id_customization="" data-id_address_delivery="" data-qty="1">
+                                                                                 <span>Add to cart</span><i class="fa fa-opencart" aria-hidden="true"></i>
+                                                                                 </a>
+                                                                                 <span class="price main_color-hover-background transition-300">
+                                                                                 <ins class="">$36.99</ins>
+                                                                                 </span>
+                                                                              </div>
+                                                                              <!--<a href="#" class="customize various" data-fancybox-type="iframe"><i class="fa fa-wrench" aria-hidden="true"></i> customize</a>-->
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                                           <div class="item product is-product-container product-style01 product-miniature js-product-miniature" data-id-product="3" data-id-product-attribute="13"  itemscope itemtype="https://schema.org/Product">
+                                                                              <div class="actions product-extra-link">
+                                                                                 <a rel="nofollow" href="#" class="quick-view main_color-hover-color transition-300 relative show-type-tooltip" data-link-action="quickview"><i class="fa fa-eye" aria-hidden="true"></i><span>Quick View</span></a>
+                                                                                 <a href="javascript:void(0)" class="add-to-favorite box-hidden wishlist favorite-pid-3" data-id_product="3" data-id_product_attribute="0">
+                                                                                 <i class="fa fa-heart" aria-hidden="true"></i>
+                                                                                 <span>Add to favorite</span>
+                                                                                 </a>
+                                                                              </div>
+                                                                              <div class="thumb-product">
+                                                                                 <a href="dresses/3-13-printed-dress.html#/1-size-s/13-color-orange">
+                                                                                 <img class="primary-image first img-responsive transition-500" src="http://prestashop.7uptheme.com/smartbuy/36-custom_250_250/printed-dress.jpg" alt="Printed Dress" itemprop="image" />
+                                                                                 </a>
+                                                                              </div>
+                                                                              <div class="name-product text-truncate">
+                                                                                 <h3><a href="dresses/3-13-printed-dress.html#/1-size-s/13-color-orange" class="main_color-hover-color">Printed Dress</a></h3>
+                                                                              </div>
+                                                                              <div class="box-cart">
+                                                                                 <a class="ajax_add_to_cart_button cart main_color-hover-color transition-300" href="module/psframework/cart.html" rel="nofollow" data-id_product_attribute="13" data-id_product="3" data-id_customization="" data-id_address_delivery="" data-qty="1">
+                                                                                 <span>Add to cart</span><i class="fa fa-opencart" aria-hidden="true"></i>
+                                                                                 </a>
+                                                                                 <span class="price main_color-hover-background transition-300">
+                                                                                 <ins class="">$25.99</ins>
+                                                                                 </span>
+                                                                              </div>
+                                                                              <!--<a href="#" class="customize various" data-fancybox-type="iframe"><i class="fa fa-wrench" aria-hidden="true"></i> customize</a>-->
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div id="megacategory-tab-1f23c0b7" data-id="321" data-widget_id="46" class="tab-content-item megacategory-tab-ajax-loader-1" >
+                                                                  <div class="content-loadding">
+                                                                     <div class="cssload-container">
+                                                                        <div class="cssload-whirlpool"></div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div id="megacategory-tab-c60583ba" data-id="322" data-widget_id="46" class="tab-content-item megacategory-tab-ajax-loader-1" >
+                                                                  <div class="content-loadding">
+                                                                     <div class="cssload-container">
+                                                                        <div class="cssload-whirlpool"></div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li class="menu-item-preview parent mega  white_color-after-color">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="#" >
+                                       <span class="menu-txt none" data-label="">Categories</span>
+                                       <i class="responsive-dropdown-toggle fa"></i>
+                                       </a>
+                                       <div class="megacontent fullwidth  megacontent-f025bba0  responsive-dropdown">
+                                          <div  class="psf-megacontent-9b9b6038  psf-row clearfix row " >
+                                             <div class="psf-megacontent-2c86a13c  col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-12 offset-sm-0 col-xs-12 offset-xs-0" >
+                                                <div class="psf-megacontent-eb452133 " >
+                                                   <div class="simple-menu mega-list-cat menu02 ">
+                                                      <h2 class="title24 text-uppercase -color">Category Page</h2>
+                                                      <ul class="menu-tree menu-tree-default tree list-none">
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Off-Canvas Filtering</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Full Width Layout</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">List layout</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Masonry layout</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Top Content</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Transparent Header</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class=" last">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Dark Style</span>
+                                                            </a>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>  
+                                             </div> 
+                                             <div class="psf-megacontent-5908a729  col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-12 offset-sm-0 col-xs-12 offset-xs-0" >
+                                                <div class="psf-megacontent-3263623e " >
+                                                   <div class="simple-menu mega-list-cat menu02 ">
+                                                      <h2 class="title24 text-uppercase -color">Product Page</h2>
+                                                      <ul class="menu-tree menu-tree-default tree list-none">
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Left Column</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Right Column</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Full Width Gallery</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Vertical Gallery</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Variations</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Transparent Header</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class=" last">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Affiliat</span>
+                                                            </a>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="psf-megacontent-ee15662d  col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-12 offset-sm-0 col-xs-12 offset-xs-0" >
+                                                <div class="psf-megacontent-857ea33a " >
+                                                   <div class="simple-menu mega-list-cat menu02 ">
+                                                      <h2 class="title24 text-uppercase -color">More...</h2>
+                                                      <ul class="menu-tree menu-tree-default tree list-none">
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Accordion Style</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Section Style</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Vertical Tabs</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Normal Tabs</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Dark Style</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class="">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Image Zoom</span>
+                                                            </a>
+                                                         </li>
+                                                         <li  class=" last">
+                                                            <a href="#" class=" main_color-hover-color transition-300">
+                                                            <span class="menu-txt none" data-label="">Product Examples</span>
+                                                            </a>
+                                                         </li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="psf-megacontent-37332520  col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-3 offset-md-0 col-sm-12 offset-sm-0 col-xs-12 offset-xs-0" >
+                                                <div class="psf-megacontent-802ee424 " >
+                                                   <div class="singlebanner default  singlebanner-b5542868">
+                                                      <a class="banner effect none" href="#">
+                                                      <img src="http://prestashop.7uptheme.com/smartbuy/modules/psframework/img/home01/banner/megamenu/megamenu/blog_03_1.jpg" alt="" />
+                                                      </a>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li class="menu-item-preview parent simple  white_color-after-color">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="#" >
+                                       <span class="menu-txt none" data-label="">Blog</span>
+                                       <i class="responsive-dropdown-toggle fa"></i>
+                                       </a>
+                                       <ul class="sub-menu list-inline submenus responsive-dropdown">
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="blogs/1-garden/2-blog-featured.html" >
+                                             <span class="menu-txt none" data-label="">Blog Featured</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="blogs4c5f.html?layout=default-list&amp;blog_layout=layout02&amp;image_type=big&amp;page_layout=right" >
+                                             <span class="menu-txt none" data-label="">Blog List</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="blogs.html" >
+                                             <span class="menu-txt none" data-label="">Blog Grid</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview parent simple  last white_color-after-color">
+                                             <a class="main_color-hover-background menu-title" href="#" >
+                                             <span class="menu-txt none" data-label="">Blog Post</span>
+                                             <i class="responsive-dropdown-toggle fa"></i>
+                                             </a>
+                                             <ul class="sub-menu list-inline submenus responsive-dropdown">
+                                                <li class="menu-item-preview ">
+                                                   <a class="main_color-hover-background menu-title" href="blogs/1-garden/3-pellentesque-in-ipsum-id-orci-porta-dapibus.html" >
+                                                   <span class="menu-txt none" data-label="">Standard Format</span>
+                                                   </a>
+                                                </li>
+                                                <li class="menu-item-preview ">
+                                                   <a class="main_color-hover-background menu-title" href="blogs/1-garden/4-curabitur-aliquet-quam-id-dui-posuere-blandit.html" >
+                                                   <span class="menu-txt none" data-label="">Gallery Format</span>
+                                                   </a>
+                                                </li>
+                                                <li class="menu-item-preview  last">
+                                                   <a class="main_color-hover-background menu-title" href="blogs/1-garden/5-vivamus-suscipit-tortor-eget-felis-porttitor-volutpat.html" >
+                                                   <span class="menu-txt none" data-label="">Video Format</span>
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="menu-item-preview ">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="content/4-about-us.html" >
+                                       <span class="menu-txt none" data-label="">About</span>
+                                       </a>
+                                    </li>
+                                    <li class="menu-item-preview ">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="contact-us.html" >
+                                       <span class="menu-txt none" data-label="">Contact</span>
+                                       </a>
+                                    </li>
+                                    <li class="menu-item-preview parent simple  last white_color-after-color">
+                                       <a class="main_color-hover-color main_color-active-color main_color-before-color menu-title" href="#" >
+                                       <span class="menu-txt none" data-label="">Pages</span>
+                                       <i class="responsive-dropdown-toggle fa"></i>
+                                       </a>
+                                       <ul class="sub-menu list-inline submenus responsive-dropdown">
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="12-garden.html" >
+                                             <span class="menu-txt none" data-label="">Category</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="content/category/1-home.html" >
+                                             <span class="menu-txt none" data-label="">CMS Category</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="content/3-terms-and-conditions-of-use.html" >
+                                             <span class="menu-txt none" data-label="">CMS Page</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="brands.html" >
+                                             <span class="menu-txt none" data-label="">List manufacturers</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="1_fashion-manufacturer.html" >
+                                             <span class="menu-txt none" data-label="">Manufacturer</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="supplier.html" >
+                                             <span class="menu-txt none" data-label="">List suppliers</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview ">
+                                             <a class="main_color-hover-background menu-title" href="1__fashion-supplier.html" >
+                                             <span class="menu-txt none" data-label="">Supplier</span>
+                                             </a>
+                                          </li>
+                                          <li class="menu-item-preview  last">
+                                             <a class="main_color-hover-background menu-title" href="garden/31-lorem-ipsum-dolor-sit-amet-conse.html" >
+                                             <span class="menu-txt none" data-label="">Product page</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                                 <div class="clearfix"></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="psf-header-515cf12d box-right col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 col-md-2 offset-md-0 col-sm-3 offset-sm-0 col-xs-3 offset-xs-0" >
+                           <div class="psf-header-3aee1279  xl-position-right lg-position-right md-position-right sm-position-right xs-position-right" >
+                              <div class="shoppingcart relative mini-cart-box">
+                                 <div class="blockcart cart-preview active relative transition-300" data-refresh-url="//prestashop.7uptheme.com/smartbuy/en/module/ps_shoppingcart/ajax">
+                                    <a class="blockcart-url relative transition-300" id="ps_shoppingcart-clone" rel="nofollow" href="cart75f4.html?action=show"  >
+                                    <span class="fa fa-opencart"><i class="icons"></i></span>
+                                    <span class="cart-products-count main_color-color"><sup>0</sup></span>
+                                    <span class="cart-products-count-label text-hide hidden-xs-up">
+                                    item
+                                    </span>
+                                    <span class="cart-products-text text-hide hidden-xs-up">Cart: </span>
+                                    <span class="cart-total-value total-value text-hide hidden-xs-up">$0.00</span>
+                                    </a>
+                                    <div class="cart-product-list default transition-300">
+                                       <div class="cart-product-list-container">
+                                          <div class="cart-empty text-xs-center">You have no items in your cart.</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="psf-header-e3c85174  xl-position-right lg-position-right md-position-right sm-position-right xs-position-right" >
+                              <div class="simple-menu default ">
+                                 <ul class="menu-tree menu-tree-default tree">
+                                    <li  class="parent  last dropdown js-dropdown">
+                                       <a class="main_color-hover-color  transition-300" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+                                       <i class="fa fa-user-o"></i>
+                                       <i class="fa fa-angle-down expand-more" aria-hidden="true"></i>
+                                       </a>
+                                       <ul class="submenus dropdown-menu">
+                                          <li  class="">
+                                             <a href="login.html" class=" main_color-hover-color transition-300">
+                                             <span class="menu-txt none" data-label="">Login</span>
+                                             </a>
+                                          </li>
+                                          <li  class="history last">
+                                             <a href="order-history" class=" main_color-hover-color transition-300">
+                                             <span class="menu-txt none" data-label="">Order history</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>

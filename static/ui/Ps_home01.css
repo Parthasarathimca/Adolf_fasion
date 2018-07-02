@@ -1,0 +1,14 @@
+/* custom css of this theme option */
+.contact-accordion .item-toggle-tab.active .toggle-tab-title,
+.contact-accordion .toggle-tab-title::after,
+.window-popup .close-popup {
+    color: #ffcb66;
+}
+.item:hover .box-cart .price,
+.main-swiper > .swiper-nav > a,
+.box-slider .swiper-pagination span.swiper-pagination-bullet{
+    background: #ffcb66;
+}
+.box-tab-detail .nav-tabs li > a.active {
+    border-bottom: 2px solid #ffcb66;
+}
